@@ -7,11 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Huisartsenpraktijk Schut">
     <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/index.css">
     <title>Apotheek Schut</title>
 </head>
 
 <body>
     <header>
+        <img class="logo" src="./img/placeholderimg.jpg" alt="Logo van de apotheek">
         <?php include 'pages/Header.php' ?>
     </header>
 
