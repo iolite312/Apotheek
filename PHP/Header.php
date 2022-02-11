@@ -1,6 +1,6 @@
-<nav>
-    <a href="../index.php">Home</a>
-    <a href="pages/service.php">Services</a>
-    <a href="pages/voorlichting.php">Voorlichting</a>
-    <a href="pages/mijnAPO.php">MijnAPO</a>
+<nav class="navbarlocation">
+    <a class="navbarstyle" href="../index.php">Home</a>
+    <a class="navbarstyle" href="pages/service.php">Services</a>
+    <a class="navbarstyle" href="pages/voorlichting.php">Voorlichting</a>
+    <a class="navbarstyle" href="pages/mijnAPO.php">MijnAPO</a>
 </nav>

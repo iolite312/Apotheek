@@ -2,3 +2,32 @@ body {
   margin: 0;
   padding: 0;
 }
+:root {
+  --background: #fff7ee;
+  --navbarborder: #003a7b;
+  --navbarbackground: #00499c;
+}
+@font-face {
+    font-family: IBM;
+    src: url(../Fonts/IBMPlexSerif-SemiBold.ttf);
+  }
+/* Global Values */
+
+body {
+  background-color: var(--background);
+}
+.navbarlocation {
+  margin: 10px 0px 0px 10px;
+}
+.navbarstyle {
+    border-radius: 10px;
+    border-style: solid;
+    border-color: var(--navbarborder);
+    background-color: var(--navbarbackground);
+    color: white;
+    text-decoration: none;
+    font-family: IBM;
+    font-size: 1.5vw;
+    padding: 10px;
+    margin-left: 10px;
+}
