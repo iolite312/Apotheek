@@ -16,6 +16,11 @@
         <img class="logo" src="./img/placeholderimg.jpg" alt="Logo van de apotheek">
         <?php include 'PHP/Header.php' ?>
     </header>
+    <noscript>
+        <img src="./img/placeholderimg.jpg" alt="">
+    </noscript>
+    <h2>Onze services</h2>
+    <p class="textwidth">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo nam natus iusto vel. Voluptate, distinctio sed? Accusantium ex, necessitatibus eos consequatur nesciunt eveniet veritatis iure natus voluptates nam cupiditate veniam et!</p>
 
 </body>
 

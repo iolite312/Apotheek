@@ -3,4 +3,6 @@
   aspect-ratio: 20/9;
   margin: 10px 0px 0px 10px;
 }
-
+.textwidth {
+  max-width: 60vw;
+}
