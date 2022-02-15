@@ -3,7 +3,8 @@ body {
   padding: 0;
 }
 :root {
-  --background: #fff7ee;
+  --background: #ffe5c7;
+  /* --background: #ff0000; */
   --navbarborder: #003a7b;
   --navbarbackground: #00499c;
 }
@@ -28,6 +29,7 @@ body {
     text-decoration: none;
     font-family: IBM;
     font-size: 1.5vw;
-    padding: 10px;
-    margin-left: 10px;
+    padding: 10px 40px 10px 40px;
+    margin-left: 1.2vw;
+    top: 10px;
 }

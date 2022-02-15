@@ -1,8 +1,29 @@
 .logo {
   height: 20vh;
   aspect-ratio: 20/9;
-  margin: 10px 0px 0px 10px;
+  margin: 10px 0px 10px 2vw;
 }
 .textwidth {
   max-width: 60vw;
+  font-family: IBM;
+}
+.newsplaceholder {
+  max-width: 30vw;
+  aspect-ratio: 16/9;
+}
+.news {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-between;
+  margin: 0px 2vw 0px 2vw;
+  position: relative;
+}
+.newstext {
+  margin-left: 2vw;
+}
+.text2 {
+  margin-left: 2vw;
+  position: relative;
+  top: 25px;
 }
