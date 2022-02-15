@@ -3,10 +3,13 @@ body {
   padding: 0;
 }
 :root {
-  --background: #ffe5c7;
+  --background: #fff1e2;
   /* --background: #ff0000; */
   --navbarborder: #003a7b;
   --navbarbackground: #00499c;
+  --footerbackground: #003a7b;
+  --footerborder: #00499c;
+  --dot: gray;
 }
 @font-face {
     font-family: IBM;

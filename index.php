@@ -24,43 +24,10 @@
         <img class="newsplaceholder" src="./img/placeholderimg.jpg" alt="news">
     </div>
     <script src="./js/slideshow.js" defer></script>
-    <!-- Slideshow container -->
-    <div class="slideshow-container">
-
-        <!-- Full-width images with number and caption text -->
-        <div class="mySlides fade">
-            <div class="numbertext">1 / 3</div>
-            <img class="img" src="./img/placeholderimg.jpg">
-            <div class="text">Caption Text</div>
-        </div>
-
-        <div class="mySlides fade">
-            <div class="numbertext">2 / 3</div>
-            <img class="img" src="./img/Schermafbeelding 2022-02-10 105447.png">
-            <div class="text">Caption Two</div>
-        </div>
-
-        <div class="mySlides fade">
-            <div class="numbertext">3 / 3</div>
-            <img class="img" src="./img/placeholderimg.jpg">
-            <div class="text">Caption Three</div>
-        </div>
-
-        <!-- Next and previous buttons -->
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-    </div>
-    <br>
-
-    <!-- The dots/circles -->
-    <div style="text-align:center">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-    </div>
+    <?php include 'PHP/slideshow.php' ?>
     <div class="text2">
         <h2>Onze services</h2>
-        <p class="textwidth">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo nam natus iusto vel. Voluptate, distinctio sed? Accusantium ex, necessitatibus eos consequatur nesciunt eveniet veritatis iure natus voluptates nam cupiditate veniam et!</p>
+        <p class="textwidth">Lorem ipsum dolor sit, amet consectetur adipisicing elit. A placeat quisquam ipsum quod unde vero aut earum nemo! Optio, itaque, possimus veritatis consectetur enim unde magnam velit cumque maxime quidem nemo ullam eos quaerat dicta reiciendis quasi molestias culpa ut voluptates. Quam, maiores cumque amet veniam iste et repellendus velit tenetur fugit assumenda consectetur officia incidunt error molestias ipsa voluptatum aliquid molestiae ex qui iusto beatae possimus id quod? Iure necessitatibus libero reiciendis, iusto nostrum nemo nesciunt qui tempora labore molestias temporibus quidem pariatur inventore eos sint exercitationem id cum suscipit obcaecati harum magnam maiores? Necessitatibus tempora dolore doloremque et tenetur officiis vitae aliquid laboriosam consequuntur deserunt aut veniam provident quo, quisquam incidunt voluptate fugiat quibusdam? Qui voluptatem laboriosam atque iusto ipsa officia porro necessitatibus, ratione corporis earum ab nulla! Veritatis cum magnam, id est rem quasi dolorum dolores veniam quidem repellat minima atque voluptatum rerum facilis sit obcaecati unde quas sint suscipit amet, beatae recusandae iure. Officia, perferendis.</p>
     </div>
     <footer>
         <?php include 'PHP/Footer.php' ?>

@@ -4,18 +4,19 @@
   margin: 10px 0px 10px 2vw;
 }
 .textwidth {
-  max-width: 60vw;
+  max-width: 70vw;
   font-family: IBM;
+  padding-bottom: 25px;
 }
 .newsplaceholder {
-  max-width: 30vw;
+  max-width: 31.5vw;
   aspect-ratio: 16/9;
 }
 .news {
   display: flex;
   flex-direction: row;
   align-content: center;
-  justify-content: space-between;
+  justify-content: center;
   margin: 0px 2vw 0px 2vw;
   position: relative;
 }
@@ -26,4 +27,35 @@
   margin-left: 2vw;
   position: relative;
   top: 25px;
+}
+.footerbackground {
+  background-color: var(--footerborder);
+  position: relative;
+  top: 25px;
+  border-style: solid;
+  border-width: 10px 0px 0px 0px;
+  border-color: var(--footerbackground);
+  height: 350px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.footerh {
+  margin-left: 2vw;
+  color: white;
+  font-family: IBM;
+}
+.footert {
+  margin-left: 2vw;
+  color: white;
+  font-family: IBM;
+}
+.contacth {
+  color: white;
+  font-family: IBM;
+}
+.contactt {
+  color: white;
+  font-family: IBM;
+  max-width: 20vw;
 }
