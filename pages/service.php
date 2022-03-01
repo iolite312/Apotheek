@@ -11,10 +11,10 @@
     <title>Apotheek Schut</title>
 </head>
 
-<body style="background-color: blanchedalmond;">
+<body>
     <header>
         <img class="logo" src="../img/placeholderimg.jpg" alt="Logo van de apotheek">
-        <?php include '../PHP/Header.php' ?>
+        <?php include '../PHP/headerpages.php' ?>
     </header>
     <article>
         <div class="styling">
