@@ -17,7 +17,7 @@
         <?php include '../PHP/Header.php' ?>
     </header>
     <article>
-        <div class="margin">
+        <div class="styling">
             <h2>Diensten</h2>
             <p>De teams van onze BENU Apotheken staan graag voor u klaar. In onze <br> 
             dienstverlening staat u dan ook centraal. We willen u graag zekerheid en veel gemak <br> 
