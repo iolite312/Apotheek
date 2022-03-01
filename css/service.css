@@ -1,33 +1,8 @@
 /* Main CSS */
-.textwidth {
-  max-width: 70vw;
-  font-family: IBM;
-  padding-bottom: 25px;
-}
-.newsplaceholder {
-  max-width: 31.5vw;
-  aspect-ratio: 16/9;
-}
-.rssfeed {
-  width: 120vw;
-  height: 500px;
-}
-.news {
-  display: flex;
-  flex-direction: row;
-  align-content: center;
-  justify-content: center;
-  margin: 0px 2vw 0px 2vw;
-  position: relative;
-}
-.newstext {
+.margin {
   margin-left: 2vw;
 }
-.text2 {
-  margin-left: 2vw;
-  position: relative;
-  top: 25px;
-}
+
 /* Footer CSS */
 .footerbackground {
   background-color: var(--footerborder);
@@ -61,7 +36,7 @@
   max-width: 20vw;
 }
 .iframe{
-  width:25vw; 
-  height: 40vh;
-  margin-top: 19.920px;
+    width:25vw; 
+    height: 40vh;
+    margin-top: 19.920px;
 }

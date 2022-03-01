@@ -19,9 +19,7 @@
     </header>
     <h2 class="newstext">Nieuws</h2>
     <div class="news">
-        <img class="newsplaceholder" src="./img/placeholderimg.jpg" alt="news">
-        <img class="newsplaceholder" src="./img/placeholderimg.jpg" alt="news">
-        <img class="newsplaceholder" src="./img/placeholderimg.jpg" alt="news">
+        <iframe class="rssfeed"  src="https://rss.app/embed/v1/carousel/dvnsQEwo7Avjf5pW" frameborder="0"></iframe>
     </div>
     <script src="./js/slideshow.js" defer></script>
     <?php include 'PHP/slideshow.php' ?>

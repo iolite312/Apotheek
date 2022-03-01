@@ -1,7 +1,4 @@
-body {
-  margin: 0;
-  padding: 0;
-}
+/* Global Values */
 :root {
   --background: #fff1e2;
   /* --background: #ff0000; */
@@ -12,27 +9,52 @@ body {
   --dot: gray;
 }
 @font-face {
-    font-family: IBM;
-    src: url(../Fonts/IBMPlexSerif-SemiBold.ttf);
-  }
-/* Global Values */
+  font-family: IBM;
+  src: url(../Fonts/IBMPlexSerif-SemiBold.ttf);
+}
 
 body {
   background-color: var(--background);
 }
+body {
+  margin: 0;
+  padding: 0;
+}
+/* Navbar CSS */
 .navbarlocation {
   margin: 10px 0px 0px 10px;
 }
 .navbarstyle {
-    border-radius: 10px;
-    border-style: solid;
-    border-color: var(--navbarborder);
-    background-color: var(--navbarbackground);
-    color: white;
-    text-decoration: none;
-    font-family: IBM;
-    font-size: 1.5vw;
-    padding: 10px 40px 10px 40px;
-    margin-left: 1.2vw;
-    top: 10px;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: var(--navbarborder);
+  background-color: var(--navbarbackground);
+  color: white;
+  text-decoration: none;
+  font-family: IBM;
+  font-size: 1.5vw;
+  padding: 10px 40px 10px 40px;
+  margin-left: 1.2vw;
+  top: 10px;
+}
+.logo {
+  height: 20vh;
+  aspect-ratio: 20/9;
+  margin: 10px 0px 10px 2vw;
+}
+/* Webkits */
+::-webkit-scrollbar {
+  width: 0rem;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgb(255, 184, 53);
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: darkcyan;
+}
+::-webkit-scrollbar-thumb:active {
+  background-color: darkcyan;
+}
+::-webkit-scrollbar-track {
+  background-color: transparent;
 }
