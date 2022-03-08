@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/slideshow.css">
+    <?php include 'database/dbconnection.php'?>
     <title>Apotheek Schut</title>
 </head>
 

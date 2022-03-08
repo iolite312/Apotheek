@@ -6,17 +6,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Huisartsenpraktijk Schut">
-    <link rel="stylesheet" href="css/global.css">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <?php include '../database/dbconnection.php'?>
     <title>Apotheek Schut</title>
 </head>
 
-<body style="background-color: blanchedalmond;">
+<body>
     <header>
-        <img class="logo" src="./img/placeholderimg.jpg" alt="Logo van de apotheek">
-        <?php include '../PHP/headerpages.php' ?>
+        <img class="logo" src="../img/placeholderimg.jpg" alt="Logo van de apotheek">
+        <?php include '../php/headerpages.php' ?>
     </header>
-
+    <footer>
+        <?php include '../PHP/Footer.php' ?>
+    </footer>
 </body>
 
 </html>
