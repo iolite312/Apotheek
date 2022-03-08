@@ -1,0 +1,51 @@
+/* Main CSS */
+table, th, td {
+  border: 1px solid rgb(173, 173, 173);
+}
+th, td{
+    padding: 5px;
+    background-color: whitesmoke;
+}
+.table-style {
+    padding: 30px 0px 0px 25px;
+    font-family: IBM;
+    max-width: 75%;
+}
+
+/* Footer CSS */
+.footerbackground {
+  background-color: var(--footerborder);
+  position: relative;
+  top: 25px;
+  border-style: solid;
+  border-width: 10px 0px 0px 0px;
+  border-color: var(--footerbackground);
+  height: 350px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.footerh {
+  margin-left: 2vw;
+  color: white;
+  font-family: IBM;
+}
+.footert {
+  margin-left: 2vw;
+  color: white;
+  font-family: IBM;
+}
+.contacth {
+  color: white;
+  font-family: IBM;
+}
+.contactt {
+  color: white;
+  font-family: IBM;
+  max-width: 20vw;
+}
+.iframe {
+  width: 25vw;
+  height: 40vh;
+  margin-top: 19.92px;
+}
