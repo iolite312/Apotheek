@@ -1,6 +1,11 @@
 <?php
-$sql = "SELECT medicijn, links, voorraad FROM medicijnen ORDER BY medicijn ASC";
+if (isset($_GET['sort'])) {
+    $SortingOrder = $_GET['sort'];
+} else {
+    $SortingOrder = "ASC";
+}
 
+$sql = "SELECT medicijn, links, voorraad FROM medicijnen ORDER BY medicijn $SortingOrder";
 $result = mysqli_query($conn, $sql);
 echo "<div class='table-style'> <table>";
 echo "<th>medicijn</th>";

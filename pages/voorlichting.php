@@ -18,11 +18,18 @@
         <?php include '../php/headerpages.php' ?>
     </header>
     <article>
-        <?php include '../php/medicijnoverzicht.php' ?>
+    <form class="form" action="voorlichting.php" method="get">
+        <input type="radio" id="asc" name="sort" value="ASC" <?php if($_GET['sort'] == "ASC" || $_GET['sort'] == ""){echo "checked";} ?>>
+        <label for="asc">A --> Z</label>
+        <input type="radio" id="desc" name="sort" value="DESC" <?php if($_GET['sort'] == "DESC"){echo "checked";} ?>>
+        <label for="desc"> Z --> A</label>
+        <input type="submit" name="submit">
+    </form>
+     <?php include '../php/medicijnoverzicht.php' ?> 
     </article>
     <footer>
         <?php include '../PHP/Footer.php' ?>
     </footer>
 </body>
-
 </html>
+lorem-32
