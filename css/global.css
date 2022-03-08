@@ -4,6 +4,8 @@
   /* --background: #ff0000; */
   --navbarborder: #003a7b;
   --navbarbackground: #00499c;
+  --hovernavbarbackground: #0363d1;
+  --activenavbarbackground: #3a7cc7;
   --footerbackground: #003a7b;
   --footerborder: #00499c;
   --dot: gray;
@@ -37,6 +39,13 @@ body {
   margin-left: 1.2vw;
   top: 10px;
 }
+.navbarstyle:not(.active):hover {
+  background-color: var(--hovernavbarbackground);
+}
+.active {
+  background-color: var(--activenavbarbackground);
+}
+
 .logo {
   height: 20vh;
   aspect-ratio: 20/9;

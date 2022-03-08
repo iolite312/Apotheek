@@ -1,3 +1,4 @@
+<?php $page = 'voorlichting'?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -15,7 +16,7 @@
 <body>
     <header>
         <img class="logo" src="../img/placeholderimg.jpg" alt="Logo van de apotheek">
-        <?php include '../php/headerpages.php' ?>
+        <?php include '../php/header.php' ?>
     </header>
     <article>
     <form class="form" action="voorlichting.php" method="get">

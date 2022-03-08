@@ -1,3 +1,4 @@
+<?php $page = 'service'?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -14,7 +15,7 @@
 <body>
     <header>
         <img class="logo" src="../img/placeholderimg.jpg" alt="Logo van de apotheek">
-        <?php include '../PHP/headerpages.php' ?>
+        <?php include '../PHP/header.php' ?>
     </header>
     <article>
         <div class="styling">
@@ -38,9 +39,8 @@
             </p>
         </div>
     </article>
-    <footer>
-        <?php include '../PHP/Footer.php' ?>
-    </footer>
+    
+    
 </body>
 
 </html>

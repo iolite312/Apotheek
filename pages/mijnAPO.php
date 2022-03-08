@@ -14,7 +14,7 @@
 <body style="background-color: blanchedalmond;">
     <header>
         <img class="logo" src="./img/placeholderimg.jpg" alt="Logo van de apotheek">
-        <?php include '../PHP/headerpages.php' ?>
+        <?php include '../PHP/header.php' ?>
     </header>
 
 </body>
