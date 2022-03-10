@@ -39,7 +39,9 @@
             </p>
         </div>
     </article>
-    
+    <footer>
+        <?php include '../PHP/Footer.php' ?>
+    </footer>
     
 </body>
 

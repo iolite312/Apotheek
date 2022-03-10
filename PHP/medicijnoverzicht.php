@@ -5,7 +5,7 @@ if (isset($_GET['sort'])) {
     $SortingOrder = "ASC";
 }
 
-$sql = "SELECT medicijn, links, voorraad FROM medicijnen ORDER BY medicijn $SortingOrder";
+$sql = "SELECT * FROM medicijnen ORDER BY medicijn $SortingOrder";
 $result = mysqli_query($conn, $sql);
 echo "<div class='table-style'> <table>";
 echo "<th>medicijn</th>";

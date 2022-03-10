@@ -31,6 +31,6 @@
     <footer>
         <?php include '../PHP/Footer.php' ?>
     </footer>
+    
 </body>
 </html>
-lorem-32

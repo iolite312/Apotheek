@@ -1,15 +1,20 @@
 <?php
 include '../database/dbconnection.php';
-$sql = "SELECT * FROM news";
-$result = $conn->query($sql);
+$sql = "SELECT * FROM news ORDER BY RAND()";
+$result = mysqli_query($conn, $sql);
 
-if ($result->num_rows > 0) {
-  // output data of each row
-  while($row = $result->fetch_assoc()) {
-    echo "<img src=../img/" . $row["IMG"]. "> -  " . $row["Titel"]. " " . $row["Intro"]. "<br>";
-  }
-} else {
+if(mysqli_num_rows($result) > 0) {
+  //output data from every row selected and inserts it into the scoreboard container
+	$i = 0;
+	while($row = mysqli_fetch_assoc($result)){
+    if($i < 3){
+      echo "<img src=../img/" . $row["IMG"]. "> -  " . $row["Titel"]. " " . $row["Intro"]. "<br>";
+		}
+		$i++;
+	}
+}
+else {
   echo "0 results";
 }
+
 $conn->close();
-?>
