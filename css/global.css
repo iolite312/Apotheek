@@ -2,7 +2,7 @@
 :root {
   --background: #fff1e2;
   /* --background: #ff0000; */
-  --navbarborder: #003a7b;
+  --navbarborder: #00397b;
   --navbarbackground: #00499c;
   --hovernavbarbackground: #0363d1;
   --activenavbarbackground: #3a7cc7;
@@ -12,7 +12,7 @@
 }
 @font-face {
   font-family: IBM;
-  src: url(../Fonts/IBMPlexSerif-SemiBold.ttf);
+  src: url(/Fonts/IBMPlexSerif-SemiBold.ttf);
 }
 
 body {
