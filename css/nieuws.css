@@ -1,3 +1,27 @@
-.div{
-    display: flex;
+.div {
+  display: flex;
+  flex-direction: row;
+  padding: 0px 0px 0px 2vw;
+}
+.center {
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+}
+.scale {
+  width: 30vw;
+  height: 50vh;
+  padding: 10px;
+}
+.newsheader{
+    font-family: IBM;
+    margin: 0px;
+    padding: 0px;
+    padding-left: 10px;
+}
+.newsdesc{
+    font-family: IBM;
+    margin: 0px;
+    padding: 0px;
+    padding-left: 10px;
 }

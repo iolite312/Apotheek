@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,7 +11,9 @@
     <?php include 'database/dbconnection.php' ?>
     <title>Apotheek Schut</title>
 </head>
+
 <body>
-    <?php include "php/nieuws.php"?>
+    <?php include "php/nieuws.php" ?>
 </body>
+
 </html>

@@ -1,11 +1,14 @@
 <?php
 if (isset($_GET['sort'])) {
-    $SortingOrder = $_GET['sort'];
+    if ($_GET['sort'] != 'DESC') {
+        $sql = "SELECT * FROM medicijnen ORDER BY medicijn ASC";
+    } else {
+        $sql = "SELECT * FROM medicijnen ORDER BY medicijn DESC";
+    }
 } else {
-    $SortingOrder = "ASC";
+    $sql = "SELECT * FROM medicijnen ORDER BY medicijn ASC";
 }
 
-$sql = "SELECT * FROM medicijnen ORDER BY medicijn $SortingOrder";
 $result = mysqli_query($conn, $sql);
 
 if (mysqli_num_rows($result) > 0) {
