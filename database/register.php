@@ -27,9 +27,8 @@
     }
 
     //add user to the table
-    $salt = "\$5\$rounds=5000\$" . "fuck" . $username . "\$";
-    $hash = crypt($password, $salt);
-    $insertuserquery = "INSERT INTO users (name, hash, salt) VALUES ('" . $username . "', '" . $hash . "', '" . $salt . "');";
+    $hash = password_hash($password, PASSWORD_BCRYPT, ['cost' => 31]);
+    $insertuserquery = "INSERT INTO users (name, hash) VALUES ('" . $username . "', '" . $hash . "');";
     mysqli_query($con, $insertuserquery) or die("4: Insert player query failed"); //error code #4 - insert query failed
 
     header("Location: /")

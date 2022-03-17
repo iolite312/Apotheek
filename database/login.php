@@ -30,7 +30,7 @@
 
     // echo "$username, $password\t";
     
-    $loginhash = crypt($password, $salt);
+    $loginhash = password_verify($password, $hash);
     if ($hash != $loginhash)
     {
         echo "\t6: Incorrect password"; //error code #6 - password does not match hash
