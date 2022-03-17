@@ -1,0 +1,39 @@
+/* Main CSS */
+
+/* Footer CSS */
+.footerbackground {
+  background-color: var(--footerborder);
+  position: relative;
+  top: 25px;
+  border-style: solid;
+  border-width: 10px 0px 0px 0px;
+  border-color: var(--footerbackground);
+  height: 350px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.footerh {
+  margin-left: 2vw;
+  color: white;
+  font-family: IBM;
+}
+.footert {
+  margin-left: 2vw;
+  color: white;
+  font-family: IBM;
+}
+.contacth {
+  color: white;
+  font-family: IBM;
+}
+.contactt {
+  color: white;
+  font-family: IBM;
+  max-width: 20vw;
+}
+.iframe {
+  width: 25vw;
+  height: 40vh;
+  margin-top: 19.92px;
+}

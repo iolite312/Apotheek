@@ -17,12 +17,12 @@
         <?php include '../PHP/header.php' ?>
     </header>
     <div>
-        <form class="form" action="/database/login.php" method="post">
+        <form class="form" action="/database/register.php" method="post">
             <label for="username">Username:</label><br>
             <input type="text" id="username" name="username"><br>
             <label for="pwd">Password:</label><br>
             <input type="password" id="pwd" name="pwd">
-            <input type="submit" name="Inloggen" id="submit">
+            <input type="submit" name="register" id="submit" value="register">
         </form>
     </div>
     <footer>
