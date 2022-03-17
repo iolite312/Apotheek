@@ -27,7 +27,7 @@
     }
 
     //add user to the table
-    $hash = password_hash($password, PASSWORD_BCRYPT, ['cost' => 31]);
+    $hash = password_hash($password, PASSWORD_BCRYPT, ['cost' => 10]);
     $insertuserquery = "INSERT INTO users (name, hash) VALUES ('" . $username . "', '" . $hash . "');";
     mysqli_query($con, $insertuserquery) or die("4: Insert player query failed"); //error code #4 - insert query failed
 
