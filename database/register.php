@@ -31,6 +31,6 @@
     $insertuserquery = "INSERT INTO users (name, hash) VALUES ('" . $username . "', '" . $hash . "');";
     mysqli_query($con, $insertuserquery) or die("4: Insert player query failed"); //error code #4 - insert query failed
 
-    header("Location: /")
+    header("Location: /apo_leon")
 
 ?>

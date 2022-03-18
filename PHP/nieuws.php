@@ -8,7 +8,7 @@ if(mysqli_num_rows($result) > 0) {
 	while($row = mysqli_fetch_assoc($result)){
 		if($i < 3){
 	  echo "<div class='center'>";
-      echo "<img class='scale' src=/img/" . $row["IMG"]. ">";
+      echo "<img class='scale' src=/apo_leon/img/" . $row["IMG"]. ">";
 	  echo "<h2 class='newsheader'>" . $row["Titel"] . "</h2>";
 	  echo "<p class='newsdesc'>" . $row["Intro"] . "</p>";
 	  echo "</div>";

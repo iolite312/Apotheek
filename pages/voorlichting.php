@@ -7,16 +7,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Huisartsenpraktijk Schut">
-    <link rel="stylesheet" href="/css/global.css">
-    <link rel="stylesheet" href="/css/voorlichting.css">
-    <?php include '../database/dbconnection.php' ?>
+    <link rel="stylesheet" href="/apo_leon/css/global.css">
+    <link rel="stylesheet" href="/apo_leon/css/voorlichting.css">
+    <?php include $_SERVER["DOCUMENT_ROOT"] .  '/apo_leon/database/dbconnection.php' ?>
     <title>Apotheek Schut</title>
 </head>
 
 <body>
     <header>
-        <img class="logo" src="/img/placeholderimg.jpg" alt="Logo van de apotheek">
-        <?php include '../php/header.php' ?>
+        <img class="logo" src="/apo_leon/img/placeholderimg.jpg" alt="Logo van de apotheek">
+        <?php include $_SERVER["DOCUMENT_ROOT"] .  '/apo_leon/php/header.php' ?>
     </header>
     <article>
         <form class="form" action="voorlichting.php" method="get">
@@ -30,12 +30,12 @@
             <table>
                 <th>medicijn</th>
                 <th>voorraad</th>
-                <?php include '../php/medicijnoverzicht.php' ?>
+                <?php include $_SERVER["DOCUMENT_ROOT"] .  '/apo_leon/php/medicijnoverzicht.php' ?>
             </table>
         </div>
     </article>
     <footer>
-        <?php include '../PHP/Footer.php' ?>
+        <?php include $_SERVER["DOCUMENT_ROOT"] .  '/apo_leon/php/Footer.php' ?>
     </footer>
 
 </body>

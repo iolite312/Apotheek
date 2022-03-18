@@ -36,4 +36,4 @@
         echo "\t6: Incorrect password"; //error code #6 - password does not match hash
         exit();
     }
-    header("Location: /");
+    header("Location: /apo_leon");

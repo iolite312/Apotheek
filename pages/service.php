@@ -7,15 +7,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Huisartsenpraktijk Schut">
-    <link rel="stylesheet" href="/css/global.css">
-    <link rel="stylesheet" href="/css/service.css">
+    <link rel="stylesheet" href="/apo_leon/css/global.css">
+    <link rel="stylesheet" href="/apo_leon/css/service.css">
     <title>Apotheek Schut</title>
 </head>
 
 <body>
     <header>
-        <img class="logo" src="/img/placeholderimg.jpg" alt="Logo van de apotheek">
-        <?php include '../PHP/header.php' ?>
+        <img class="logo" src="/apo_leon/img/placeholderimg.jpg" alt="Logo van de apotheek">
+        <?php include $_SERVER["DOCUMENT_ROOT"] .  '/apo_leon/php/header.php' ?>
     </header>
     <article>
         <div class="styling">
@@ -40,7 +40,7 @@
         </div>
     </article>
     <footer>
-        <?php include '../PHP/Footer.php' ?>
+        <?php include $_SERVER["DOCUMENT_ROOT"] .  '/apo_leon/php/Footer.php' ?>
     </footer>
     
 </body>
