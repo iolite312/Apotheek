@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/slideshow.css">
     <link rel="stylesheet" href="css/nieuws.css">
-    <?php include $_SERVER["DOCUMENT_ROOT"] .  '/apo_leon/database/dbconnection.php'?>
+    <!-- <?php include $_SERVER["DOCUMENT_ROOT"] .  '/apo_leon/database/dbconnection.php'?> -->
     <title>Apotheek Schut</title>
 </head>
 
