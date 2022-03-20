@@ -28,6 +28,7 @@
         
         <?php include $_SERVER["DOCUMENT_ROOT"] .  "/apo_leon/php/nieuws.php" ?>
     </div>
+    <?php echo "php enabled";?>
     <script src="/apo_leon/js/slideshow.js" defer></script>
     <?php include $_SERVER["DOCUMENT_ROOT"] . '/apo_leon/php/slideshow.php' ?>
     <div class="text2">
@@ -40,4 +41,3 @@
 </body>
 
 </html>
-<!-- banaanaaa -->
