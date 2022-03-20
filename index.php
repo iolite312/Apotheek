@@ -18,7 +18,7 @@
 <body>
     <header>
         <img class="logo" src="./img/placeholderimg.jpg" alt="Logo van de apotheek">
-        <?php require '/apo_leon/PHP/header.php' ?>
+        <?php include $_SERVER["DOCUMENT_ROOT"] .  '/apo_leon/PHP/header.php' ?>
     </header>
     <h2 class="newstext">Nieuws</h2>
     <!-- <div class="news">
@@ -26,7 +26,7 @@
     </div> -->
     <div>
         
-        <?php include $_SERVER["DOCUMENT_ROOT"] .  "/apo_leon/PHP/nieuws.php" ?>
+        <?php include $_SERVER["DOCUMENT_ROOT"] .  "/apo_leon/php/nieuws.php" ?>
     </div>
     <?php echo "php enabled";?>
     <script src="/apo_leon/js/slideshow.js" defer></script>
