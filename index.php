@@ -18,7 +18,7 @@
 <body>
     <header>
         <img class="logo" src="./img/placeholderimg.jpg" alt="Logo van de apotheek">
-        <?php include '/var/www/html/apo_leon/PHP/header.php' ?>
+        <?php include 'var/www/html/apo_leon/PHP/header.php' ?>
     </header>
     <h2 class="newstext">Nieuws</h2>
     <!-- <div class="news">
