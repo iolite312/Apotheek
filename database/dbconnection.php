@@ -1,5 +1,5 @@
 <?php    
-    $servername = '82.151.61.71';
+    $servername = '192.168.178.88';
     $username = 'phpmyadmin';
     $password = 'admin';
     $dbname = 'apotheek';
