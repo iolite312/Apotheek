@@ -29,6 +29,7 @@
         <?php include $_SERVER["DOCUMENT_ROOT"] .  "/apo_leon/php/nieuws.php" ?>
     </div>
     <?php echo getcwd();?>
+    <?php echo dirname['../'] ?>
     <script src="/apo_leon/js/slideshow.js" defer></script>
     <?php include $_SERVER["DOCUMENT_ROOT"] . '/apo_leon/php/slideshow.php' ?>
     <div class="text2">
