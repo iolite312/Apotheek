@@ -1,7 +1,7 @@
 <?php    
-    $servername = '192.168.178.88';
-    $username = 'phpmyadmin';
-    $password = 'admin';
+    $servername = 'localhost';
+    $username = 'root';
+    $password = '';
     $dbname = 'apotheek';
     $conn = mysqli_connect($servername,$username, $password, $dbname);
     //check that connection happend

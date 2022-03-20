@@ -11,14 +11,14 @@
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/slideshow.css">
     <link rel="stylesheet" href="css/nieuws.css">
-    <?php include '/apo_leon/database/dbconnection.php'?>
+    <?php include $_SERVER["DOCUMENT_ROOT"] .  '/apo_leon/database/dbconnection.php'?>
     <title>Apotheek Schut</title>
 </head>
 
 <body>
     <header>
         <img class="logo" src="./img/placeholderimg.jpg" alt="Logo van de apotheek">
-        <?php include $_SERVER["DOCUMENT_ROOT"] . '/apo_leon/php/header.php' ?>
+        <?php include $_SERVER["DOCUMENT_ROOT"] .  '/apo_leon/php/header.php' ?>
     </header>
     <h2 class="newstext">Nieuws</h2>
     <!-- <div class="news">
