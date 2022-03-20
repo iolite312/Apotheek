@@ -18,7 +18,7 @@
 <body>
     <header>
         <img class="logo" src="./img/placeholderimg.jpg" alt="Logo van de apotheek">
-        <?php include 'PHP/header.php' ?>
+        <?php include $_SERVER["DOCUMENT_ROOT"] . '/apo_leon/php/header.php' ?>
     </header>
     <h2 class="newstext">Nieuws</h2>
     <!-- <div class="news">
@@ -28,8 +28,6 @@
         
         <?php include $_SERVER["DOCUMENT_ROOT"] .  "/apo_leon/php/nieuws.php" ?>
     </div>
-    <?php echo getcwd();?>
-    <?php echo dirname['../'] ?>
     <script src="/apo_leon/js/slideshow.js" defer></script>
     <?php include $_SERVER["DOCUMENT_ROOT"] . '/apo_leon/php/slideshow.php' ?>
     <div class="text2">

@@ -4,3 +4,4 @@
     <a class="navbarstyle <?php if($page == 'voorlichting'){echo 'active';} ?>" href="/apo_leon/pages/voorlichting?sort=&submit=Verzenden">Voorlichting</a>
     <a class="navbarstyle <?php if($page == 'mijnapo'){echo 'active';} ?>" href="/apo_leon/pages/mijnAPO">MijnAPO</a>
 </nav>
+
