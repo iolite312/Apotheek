@@ -18,12 +18,13 @@
     </header>
     <div>
         <form class="form" action="/apo_leon/database/login.php" method="post">
-            <label for="username">Username:</label><br>
-            <input type="text" id="username" name="username"><br>
-            <label for="pwd">Password:</label><br>
-            <input type="password" id="pwd" name="pwd">
-            <input type="submit" name="Inloggen" id="submit">
+            <div class="location">
+                <input class="size" type="text" id="username" name="username" placeholder="E-Mail"><br>
+                <input class="size" type="password" id="pwd" name="pwd" placeholder="Wachtwoord"><br>
+                <input class="size" type="submit" name="Inloggen" id="submit"><br>
+            </div>
         </form>
+        <button class="size"><a class="register" href="./mijnAPOregister.php">Register</a></button>
     </div>
     <footer>
         <?php include $_SERVER["DOCUMENT_ROOT"] .  '/apo_leon/php/Footer.php' ?>
