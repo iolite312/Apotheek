@@ -1,4 +1,4 @@
-<?php $page = 'index';?>
+<?php $page = 'index'; ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -25,7 +25,6 @@
         <iframe class="rssfeed"  src="https://rss.app/embed/v1/carousel/dvnsQEwo7Avjf5pW" frameborder="0"></iframe>
     </div> -->
     <div>
-        
         <?php include $_SERVER["DOCUMENT_ROOT"] .  "/apo_leon/php/nieuws.php" ?>
     </div>
     <script src="/apo_leon/js/slideshow.js" defer></script>

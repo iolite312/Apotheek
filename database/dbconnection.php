@@ -2,7 +2,7 @@
     $servername = 'localhost';
     $username = 'root';
     $password = '';
-    $dbname = 'apotheek';
+    $dbname = 'apo_leon';
     $conn = mysqli_connect($servername,$username, $password, $dbname);
     //check that connection happend
     if(mysqli_connect_errno())
