@@ -11,17 +11,22 @@
 .scale {
   width: 30vw;
   height: 50vh;
-  padding: 10px;
+  padding-right: 20px;
 }
 .newsheader{
     font-family: IBM;
     margin: 0px;
     padding: 0px;
-    padding-left: 10px;
+
 }
 .newsdesc{
     font-family: IBM;
     margin: 0px;
     padding: 0px;
-    padding-left: 10px;
+}
+.timestamp{
+  font-family: IBM;
+  margin: 0px;
+  padding: 0px;
+  font-size: 0.7vw;
 }

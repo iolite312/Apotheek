@@ -1,17 +1,20 @@
 /* Main CSS */
-table, th, td {
+table,
+th,
+td {
   border: 1px solid rgb(173, 173, 173);
 }
-th, td{
-    padding: 5px;
-    background-color: whitesmoke;
+th,
+td {
+  padding: 5px;
+  background-color: whitesmoke;
 }
 .table-style {
-    padding: 10px 0px 0px 25px;
-    font-family: IBM;
-    max-width: 75%;
+  padding: 10px 0px 0px 25px;
+  font-family: IBM;
+  max-width: 75%;
 }
-.form{
+.form {
   padding: 30px 0px 0px 25px;
   font-family: IBM;
 }
@@ -47,6 +50,7 @@ th, td{
   color: white;
   font-family: IBM;
   max-width: 20vw;
+  line-height: 40px;
 }
 .iframe {
   width: 25vw;

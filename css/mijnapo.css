@@ -43,6 +43,7 @@
   color: white;
   font-family: IBM;
   max-width: 20vw;
+  line-height: 40px;
 }
 .iframe {
   width: 25vw;
