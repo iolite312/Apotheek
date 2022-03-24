@@ -61,6 +61,14 @@
   max-width: 20vw;
   line-height: 40px;
 }
+.contacta {
+  color: white;
+  font-family: IBM;
+  max-width: 20vw;
+  line-height: 40px;
+  text-decoration: none;
+  text-decoration: underline;
+}
 .iframe{
   width:25vw; 
   height: 40vh;
