@@ -1,5 +1,5 @@
 <?php
-$sql = "SELECT * FROM `news` ORDER BY `datum` DESC";
+$sql = "SELECT * FROM news ORDER BY datum DESC";
 $result = mysqli_query($conn, $sql);
 echo "<div class='div'>";
 if (mysqli_num_rows($result) > 0) {
