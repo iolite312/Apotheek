@@ -40,7 +40,7 @@
         </div>
     </article>
     <footer>
-        <?php include $_SERVER["DOCUMENT_ROOT"] .  '/apo_leon/php/Footer.php' ?>
+        <?php include $_SERVER["DOCUMENT_ROOT"] .  '/apo_leon/php/footer.php' ?>
     </footer>
     
 </body>

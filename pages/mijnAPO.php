@@ -27,7 +27,7 @@
         <button class="size"><a class="register" href="./mijnAPOregister.php">Register</a></button>
     </div>
     <footer>
-        <?php include $_SERVER["DOCUMENT_ROOT"] .  '/apo_leon/php/Footer.php' ?>
+        <?php include $_SERVER["DOCUMENT_ROOT"] .  '/apo_leon/php/footer.php' ?>
     </footer>
 
 </body>
