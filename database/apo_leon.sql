@@ -101,7 +101,7 @@ CREATE TABLE `news` (
   `IMG` varchar(50) NOT NULL,
   `Intro` varchar(256) NOT NULL,
   `link` varchar(300) NOT NULL,
-  `datum` date DEFAULT current_timestamp()
+  `datum` datetime DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
