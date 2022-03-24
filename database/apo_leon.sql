@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 17, 2022 at 05:16 PM
+-- Generation Time: Mar 24, 2022 at 10:56 AM
 -- Server version: 10.4.21-MariaDB
 -- PHP Version: 8.0.10
 
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `apotheek`
+-- Database: `apo_leon`
 --
 
 -- --------------------------------------------------------
@@ -100,18 +100,19 @@ CREATE TABLE `news` (
   `Titel` varchar(50) NOT NULL,
   `IMG` varchar(50) NOT NULL,
   `Intro` varchar(256) NOT NULL,
-  `link` varchar(300) NOT NULL
+  `link` varchar(300) NOT NULL,
+  `datum` date DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `news`
 --
 
-INSERT INTO `news` (`ID`, `Titel`, `IMG`, `Intro`, `link`) VALUES
-(1, 'Corona', 'placeholderimg.jpg', 'Wij hebben corona ', ''),
-(2, 'Corona 2', 'placeholderimg.jpg', 'Wij hebben corona 2', ''),
-(3, 'Corona 3', 'placeholderimg.jpg', 'Wij hebben corona 3', ''),
-(4, 'Corona 4', 'placeholderimg.jpg', 'Wij hebben corona 4', '');
+INSERT INTO `news` (`ID`, `Titel`, `IMG`, `Intro`, `link`, `datum`) VALUES
+(1, 'Corona', 'placeholderimg.jpg', 'Wij hebben corona ', '', '2022-03-08'),
+(2, 'Corona 2', 'placeholderimg.jpg', 'Wij hebben corona 2', '', '2022-03-01'),
+(3, 'Corona 3', 'placeholderimg.jpg', 'Wij hebben corona 3', '', '2022-02-02'),
+(4, 'Corona 4', 'placeholderimg.jpg', 'Wij hebben corona 4', '', '2022-01-05');
 
 -- --------------------------------------------------------
 
@@ -131,7 +132,10 @@ CREATE TABLE `users` (
 
 INSERT INTO `users` (`ID`, `name`, `hash`) VALUES
 (1, 'test', '$2y$10$oh4nexkF8E8iyeH0yhxNBeb6sUmi2kq40HmDWQOaLYr7v.L.HAl6q'),
-(2, '1', '$2y$15$TtmFFwDTbMrNda5oWDTeVeUDGsYGLlyxPHmU/.Rcfp0wbsusDq94i');
+(2, '1', '$2y$15$TtmFFwDTbMrNda5oWDTeVeUDGsYGLlyxPHmU/.Rcfp0wbsusDq94i'),
+(3, '123', '$2y$10$KBUC/tjgFv.Qt9Kx6JjZaO84ssjUw4QVZKupgve6vCU.1pGn0nOr6'),
+(4, '321', '$2y$10$Kw7ESZ5R9FZglgUpdJyfUeH4wsi7Ith5Ael1HSvlESdrRqwPHrX7.'),
+(5, '132', '$2y$10$OFvSBBCZL6ihEjcHR61F/.pp5myoPVKk4Di/VYz.LeMHZccBjRzTO');
 
 --
 -- Indexes for dumped tables
@@ -169,13 +173,13 @@ ALTER TABLE `medicijnen`
 -- AUTO_INCREMENT for table `news`
 --
 ALTER TABLE `news`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

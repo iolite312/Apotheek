@@ -2,7 +2,7 @@
     $servername = '82.151.61.71';
     $username = 'apotheek';
     $password = 'Website';
-    $dbname = 'apotheek';
+    $dbname = 'apo_leon';
     $conn = mysqli_connect($servername,$username, $password, $dbname);
     //check that connection happend
     if(mysqli_connect_errno())
