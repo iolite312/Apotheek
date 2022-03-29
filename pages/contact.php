@@ -17,7 +17,7 @@
         <?php include $_SERVER["DOCUMENT_ROOT"] .  '/apo_leon/php/header.php' ?>
     </header>
     <div>
-        <form class="form" action="/apo_leon/php/sendcontact.php" method="post">
+        <form class="form" action="/apo_leon/php/sendcontact" method="post">
             <label for="username">Uw Naam:</label>
             <input class="size" type="text" id="username" name="username"><br>
             <label for="mail">Email:</label>
