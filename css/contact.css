@@ -1,0 +1,63 @@
+.form {
+    margin-left: 2vw;
+    position: relative;
+    top: 25px;
+}
+.size {
+    width: 15vw;
+    height: 3vh;
+    margin-bottom: 10px;
+  }
+  .size2 {
+    width: 20vw;
+    height: 10vh;
+    margin-bottom: 10px;
+  }
+
+/* Footer CSS */
+.footerbackground {
+    background-color: var(--footerborder);
+    position: relative;
+    top: 10vh;
+    border-style: solid;
+    border-width: 10px 0px 0px 0px;
+    border-color: var(--footerbackground);
+    height: 50vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .footerh {
+    margin-left: 2vw;
+    color: white;
+    font-family: IBM;
+  }
+  .footert {
+    margin-left: 2vw;
+    color: white;
+    font-family: IBM;
+  }
+  .contacth {
+    color: white;
+    font-family: IBM;
+  }
+  .contactt {
+    color: white;
+    font-family: IBM;
+    max-width: 20vw;
+    line-height: 40px;
+    margin: 0px;
+  }
+  .contacta {
+    color: white;
+    font-family: IBM;
+    max-width: 20vw;
+    line-height: 40px;
+    text-decoration: none;
+    text-decoration: underline;
+  }
+  .iframe{
+    width:25vw; 
+    height: 40vh;
+    margin-top: 19.920px;
+  }

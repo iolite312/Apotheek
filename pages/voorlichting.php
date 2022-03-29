@@ -19,7 +19,7 @@
         <?php include $_SERVER["DOCUMENT_ROOT"] .  '/apo_leon/php/header.php' ?>
     </header>
     <article>
-        <form class="form" action="voorlichting" method="get">
+        <form class="form" action="voorlichting" method="get" >
             <input type="radio" id="asc" name="sort" value="ASC" <?php if($_GET['sort'] == "ASC" || $_GET['sort'] == ""){echo "checked";} ?>>
             <label for="asc">A --> Z</label>
             <input type="radio" id="desc" name="sort" value="DESC" <?php if($_GET['sort'] == "DESC"){echo "checked";} ?>>

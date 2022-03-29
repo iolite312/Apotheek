@@ -51,9 +51,18 @@ td {
   font-family: IBM;
   max-width: 20vw;
   line-height: 40px;
+  margin: 0px;
 }
-.iframe {
-  width: 25vw;
+.contacta {
+  color: white;
+  font-family: IBM;
+  max-width: 20vw;
+  line-height: 40px;
+  text-decoration: none;
+  text-decoration: underline;
+}
+.iframe{
+  width:25vw; 
   height: 40vh;
-  margin-top: 19.92px;
+  margin-top: 19.920px;
 }

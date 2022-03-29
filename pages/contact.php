@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Huisartsenpraktijk Schut">
     <link rel="stylesheet" href="/apo_leon/css/global.css">
-    <link rel="stylesheet" href="/apo_leon/css/mijnapo.css">
+    <link rel="stylesheet" href="/apo_leon/css/contact.css">
     <title>Apotheek Schut</title>
 </head>
 
@@ -17,16 +17,16 @@
         <?php include $_SERVER["DOCUMENT_ROOT"] .  '/apo_leon/php/header.php' ?>
     </header>
     <div>
-        <form class="form" action="/apo_leon/php/contact.php" method="post">
+        <form class="form" action="/apo_leon/php/sendcontact.php" method="post">
             <label for="username">Uw Naam:</label>
-            <input type="text" id="username" name="username"><br>
+            <input class="size" type="text" id="username" name="username"><br>
             <label for="mail">Email:</label>
-            <input type="email" id="mail" name="mail"><br>
+            <input class="size" type="email" id="mail" name="mail"><br>
             <label for="telefoon">Telefoon:</label>
-            <input type="password" id="telefoon" name="telefoon"><br>
-            <label for="pwd">Bericht:</label>
-            <input type="text" id="bericht" name="bericht"><br>
-            <input type="submit" name="register" id="submit" value="register">
+            <input class="size" type="text" id="phone" name="phone"><br>
+            <label for="bericht">Bericht:</label><br>
+            <textarea class="size2" type="text" id="message" name="message"></textarea><br>
+            <input class="size" type="submit" name="send" id="submit" value="Verzenden">
         </form>
     </div>
     <footer>
