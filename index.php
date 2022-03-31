@@ -33,7 +33,6 @@
         <h2>Onze services</h2>
         <p class="textwidth">Lorem ipsum dolor sit, amet consectetur adipisicing elit. A placeat quisquam ipsum quod unde vero aut earum nemo! Optio, itaque, possimus veritatis consectetur enim unde magnam velit cumque maxime quidem nemo ullam eos quaerat dicta reiciendis quasi molestias culpa ut voluptates. Quam, maiores cumque amet veniam iste et repellendus velit tenetur fugit assumenda consectetur officia incidunt error molestias ipsa voluptatum aliquid molestiae ex qui iusto beatae possimus id quod? Iure necessitatibus libero reiciendis, iusto nostrum nemo nesciunt qui tempora labore molestias temporibus quidem pariatur inventore eos sint exercitationem id cum suscipit obcaecati harum magnam maiores? Necessitatibus tempora dolore doloremque et tenetur officiis vitae aliquid laboriosam consequuntur deserunt aut veniam provident quo, quisquam incidunt voluptate fugiat quibusdam? Qui voluptatem laboriosam atque iusto ipsa officia porro necessitatibus, ratione corporis earum ab nulla! Veritatis cum magnam, id est rem quasi dolorum dolores veniam quidem repellat minima atque voluptatum rerum facilis sit obcaecati unde quas sint suscipit amet, beatae recusandae iure. Officia, perferendis.</p>
     </div>
-    <p>hello</p>
     <footer>
         <?php include $_SERVER["DOCUMENT_ROOT"] .  '/apo_leon/php/footer.php' ?>
     </footer>
