@@ -1,13 +1,14 @@
 -- phpMyAdmin SQL Dump
--- version 5.1.1
+-- version 4.9.7deb1
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1
--- Generation Time: Mar 24, 2022 at 10:56 AM
--- Server version: 10.4.21-MariaDB
--- PHP Version: 8.0.10
+-- Host: localhost:3306
+-- Generation Time: Apr 05, 2022 at 08:55 AM
+-- Server version: 8.0.27-0ubuntu0.21.04.1
+-- PHP Version: 7.4.16
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -24,15 +25,39 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `contact`
+--
+
+CREATE TABLE `contact` (
+  `ID` int NOT NULL,
+  `name` varchar(100) NOT NULL,
+  `email` varchar(100) NOT NULL,
+  `phone` varchar(16) NOT NULL,
+  `message` varchar(3000) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
+
+--
+-- Dumping data for table `contact`
+--
+
+INSERT INTO `contact` (`ID`, `name`, `email`, `phone`, `message`) VALUES
+(2, '1234', 'leon@mail.com', '0612345678910', '12345678910'),
+(3, '1234', 'leon@mail.com', '061234567890', 'easd'),
+(4, '.', '.@2.2', '.', '.'),
+(5, 'My name', '2@3.4', '60123456789', 'INSERT INTO * VALUES (123,NULL,NULL)');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `medicijnen`
 --
 
 CREATE TABLE `medicijnen` (
-  `id` int(11) NOT NULL,
+  `id` int NOT NULL,
   `medicijn` varchar(100) NOT NULL,
   `links` varchar(300) NOT NULL DEFAULT '#',
-  `voorraad` int(10) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+  `voorraad` int NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
 
 --
 -- Dumping data for table `medicijnen`
@@ -96,23 +121,23 @@ INSERT INTO `medicijnen` (`id`, `medicijn`, `links`, `voorraad`) VALUES
 --
 
 CREATE TABLE `news` (
-  `ID` int(11) NOT NULL,
+  `ID` int NOT NULL,
   `Titel` varchar(50) NOT NULL,
   `IMG` varchar(50) NOT NULL,
   `Intro` varchar(256) NOT NULL,
   `link` varchar(300) NOT NULL,
-  `datum` datetime DEFAULT current_timestamp()
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+  `datum` datetime DEFAULT CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
 
 --
 -- Dumping data for table `news`
 --
 
 INSERT INTO `news` (`ID`, `Titel`, `IMG`, `Intro`, `link`, `datum`) VALUES
-(1, 'Corona', 'placeholderimg.jpg', 'Wij hebben corona ', '', '2022-03-08'),
-(2, 'Corona 2', 'placeholderimg.jpg', 'Wij hebben corona 2', '', '2022-03-01'),
-(3, 'Corona 3', 'placeholderimg.jpg', 'Wij hebben corona 3', '', '2022-02-02'),
-(4, 'Corona 4', 'placeholderimg.jpg', 'Wij hebben corona 4', '', '2022-01-05');
+(1, 'Corona', 'placeholderimg.jpg', 'Wij hebben corona ', '', '2022-03-08 00:00:00'),
+(2, 'Corona 2', 'placeholderimg.jpg', 'Wij hebben corona 2', '', '2022-03-01 00:00:00'),
+(3, 'Corona 3', 'placeholderimg.jpg', 'Wij hebben corona 3', '', '2022-02-02 00:00:00'),
+(4, 'Corona 4', 'placeholderimg.jpg', 'Wij hebben corona 4', '', '2022-01-05 00:00:00');
 
 -- --------------------------------------------------------
 
@@ -121,10 +146,10 @@ INSERT INTO `news` (`ID`, `Titel`, `IMG`, `Intro`, `link`, `datum`) VALUES
 --
 
 CREATE TABLE `users` (
-  `ID` int(11) NOT NULL,
+  `ID` int NOT NULL,
   `name` varchar(100) NOT NULL,
   `hash` varchar(3000) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
 
 --
 -- Dumping data for table `users`
@@ -135,11 +160,18 @@ INSERT INTO `users` (`ID`, `name`, `hash`) VALUES
 (2, '1', '$2y$15$TtmFFwDTbMrNda5oWDTeVeUDGsYGLlyxPHmU/.Rcfp0wbsusDq94i'),
 (3, '123', '$2y$10$KBUC/tjgFv.Qt9Kx6JjZaO84ssjUw4QVZKupgve6vCU.1pGn0nOr6'),
 (4, '321', '$2y$10$Kw7ESZ5R9FZglgUpdJyfUeH4wsi7Ith5Ael1HSvlESdrRqwPHrX7.'),
-(5, '132', '$2y$10$OFvSBBCZL6ihEjcHR61F/.pp5myoPVKk4Di/VYz.LeMHZccBjRzTO');
+(5, '132', '$2y$10$OFvSBBCZL6ihEjcHR61F/.pp5myoPVKk4Di/VYz.LeMHZccBjRzTO'),
+(6, 'test12', '$2y$10$D2O.spH2ptuY0RDhoXTU5.YBbrG.IGxW3YkDuzxmAURncBgBEt0Oa');
 
 --
 -- Indexes for dumped tables
 --
+
+--
+-- Indexes for table `contact`
+--
+ALTER TABLE `contact`
+  ADD PRIMARY KEY (`ID`);
 
 --
 -- Indexes for table `medicijnen`
@@ -164,22 +196,28 @@ ALTER TABLE `users`
 --
 
 --
+-- AUTO_INCREMENT for table `contact`
+--
+ALTER TABLE `contact`
+  MODIFY `ID` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+
+--
 -- AUTO_INCREMENT for table `medicijnen`
 --
 ALTER TABLE `medicijnen`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=50;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=50;
 
 --
 -- AUTO_INCREMENT for table `news`
 --
 ALTER TABLE `news`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `ID` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `ID` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
