@@ -1,5 +1,5 @@
 <?php    
-    $servername = '82.151.61.71';
+    $servername = 'localhost';
     $username = 'apotheek';
     $password = 'Website';
     $dbname = 'apo_leon';
